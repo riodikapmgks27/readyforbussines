@@ -7,7 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("navMenu");
+  menu.classList.toggle("active");
+}
+</script>
 <!-- NAVBAR -->
 <nav class="navbar">
   <div class="nav-container">
@@ -18,17 +23,19 @@
     <h1>R&D Collection</h1>
     </a>
     <!-- MENU -->
-    <ul class="nav-links">
+    <ul class="nav-links"id="navMenu">
       <li><a href="#">Home</a></li>
       <li><a href="#produk">Produk</a></li>
       <li><a href="#tentang">Tentang</a></li>
       <li><a href="#kerjasama">Kerjasama</a></li>
-      <li><a href="#Ulasan">Ulasan</a></li>
+      <li><a href="#ulasan">Ulasan</a></li>
       <li><a href="#kontak">Kontak</a></li>
     </ul>
 
     <!-- HAMBURGER -->
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <div class="menu-toggle" onclick="toggleMenu( )">☰
+      
+    </div>
 
   </div>
 </nav>
@@ -41,7 +48,7 @@
         </h1>
         <h1>Ready For Business</h1>
         <p>Koleksi Fashion Terbaik Indonesia</p>
-        <a href="#produk" class="btn">Lihat Produk</a>
+        <a href="#tentang" class="btn">Tentang Kami</a>
 </section>
 
 <!-- PRODUK -->
@@ -67,7 +74,22 @@
             <h3>Kemeja</h3>
             <a href="COLLECTIONKEMEJA.html" class="btn">Lihat Produk</a>
         </div>
-
+        <div class="card">
+            <img src="img/f5e37481-4b69-410c-bbd1-bf3473e1811f_1772076425168_resized512-jpeg.webp">
+            <h3>Kemeja</h3>
+            <a href="COLLECTIONKEMEJA.html" class="btn">Lihat Produk</a>
+        </div>
+         <div class="card">
+            <img src="img/f5e37481-4b69-410c-bbd1-bf3473e1811f_1772076425168_resized512-jpeg.webp">
+            <h3>Kemeja</h3>
+            <a href="COLLECTIONKEMEJA.html" class="btn">Lihat Produk</a>
+        </div>
+        
+         <div class="card">
+            <img src="img/f5e37481-4b69-410c-bbd1-bf3473e1811f_1772076425168_resized512-jpeg.webp">
+            <h3>Kemeja</h3>
+            <a href="COLLECTIONKEMEJA.html" class="btn">Lihat Produk</a>
+        </div>
     </div>
 </section>
 <!-- ===============================
@@ -76,154 +98,209 @@
 <section id="tentang" class="tentang-section">
   <div class="tentang-container">
 
-    <!-- TEXT -->
-    <div class="tentang-text">
-      <h2>Tentang R&D Collection</h2>
-
-      <p>
-        R&D Collection merupakan brand fashion yang berfokus pada kualitas,
-        kenyamanan, dan desain modern. Kami menyediakan berbagai produk seperti
-        kaos, celana, batik, serta pakaian formal dan casual yang dirancang
-        untuk menunjang penampilan profesional maupun kebutuhan sehari-hari.
-      </p>
-
-      <p>
-        Dengan komitmen terhadap bahan premium dan detail produksi,
-        kami terus berinovasi mengikuti perkembangan tren tanpa
-        menghilangkan identitas elegan dan eksklusif.
-      </p>
+    <!-- LOGO / IMAGE -->
+    <div class="tentang-image">
+      <img src="img/WhatsApp Image 2026-01-01 at 23.45.57.jpeg" alt="Logo R&D Collection">
     </div>
 
-    <!-- LOGO KANAN -->
-    <div class="tentang-logo">
-      <img src="img/WhatsApp Image 2026-01-01 at 23.45.57.jpeg" alt="Logo R&D Collection">
+    <!-- TEXT CONTENT -->
+    <div class="tentang-content">
+      <span class="tag">About Our Brand</span>
+      <h2>R&D Collection</h2>
+
+      <p>
+        R&D Collection adalah brand fashion yang mengutamakan kualitas,
+        kenyamanan, dan desain modern. Kami menghadirkan berbagai produk
+        mulai dari kaos, celana, batik, hingga pakaian formal dan casual
+        untuk menunjang gaya profesional maupun aktivitas sehari-hari.
+      </p>
+
+      <p>
+        Dengan penggunaan bahan premium dan proses produksi yang detail,
+        kami terus berinovasi mengikuti tren fashion tanpa meninggalkan
+        identitas elegan dan eksklusif.
+      </p>
+
+      <a href="#produk" class="btn-tentang">Lihat Produk</a>
     </div>
 
   </div>
 </section>
 
 <!-- ================= KERJA SAMA ================= -->
-<section id="kerjasama" class="section bg-light">
+<section id="kerjasama" class="kerjasama-section">
   <div class="container">
-    <h2 class="section-title">Kerja Sama</h2>
 
-    <div class="grid-3">
-      <div class="card">
+    <h2 class="section-title">Program Kerja Sama</h2>
+    <p class="section-subtitle">
+      R&D Collection membuka berbagai peluang kolaborasi untuk berkembang bersama
+      dalam industri fashion modern.
+    </p>
+
+    <div class="kerjasama-grid">
+
+      <div class="kerjasama-card">
+        <div class="icon">🤝</div>
         <h3>Reseller & Distributor</h3>
-        <p>Kami membuka peluang kerja sama bagi reseller dan distributor di seluruh Indonesia.</p>
-      </div>
-      <div class="card">
-        <h3>Produksi Custom</h3>
-        <p>Melayani pembuatan seragam perusahaan, komunitas, dan kebutuhan brand dengan desain khusus.</p>
-      </div>
-      <div class="card">
-        <h3>Produksi Custom</h3>
-        <p>Melayani pembuatan seragam perusahaan, komunitas, dan kebutuhan brand dengan desain khusus.</p>
-      </div>
-      <div class="card">
-        <h3>Produksi Custom</h3>
-        <p>Melayani pembuatan seragam perusahaan, komunitas, dan kebutuhan brand dengan desain khusus.</p>
+        <p>Peluang bisnis bagi reseller dan distributor di seluruh Indonesia dengan sistem kerja sama profesional.</p>
       </div>
 
-      <div class="card">
-        <h3>Brand Collaboration</h3>
-        <p>Kolaborasi dengan brand atau UMKM untuk menciptakan produk fashion eksklusif.</p>
+      <div class="kerjasama-card">
+        <div class="icon">👕</div>
+        <h3>Produksi Custom</h3>
+        <p>Pembuatan seragam perusahaan, komunitas, dan kebutuhan brand dengan desain eksklusif.</p>
       </div>
 
-      <div class="card">
+      <div class="kerjasama-card">
+        <div class="icon">🚀</div>
         <h3>Brand Collaboration</h3>
-        <p>Kolaborasi dengan brand atau UMKM untuk menciptakan produk fashion eksklusif.</p>
-      </div>
-      <div class="card">
-        <h3>Brand Collaboration</h3>
-        <p>Kolaborasi dengan brand atau UMKM untuk menciptakan produk fashion eksklusif.</p>
+        <p>Kolaborasi bersama brand dan UMKM untuk menciptakan produk fashion inovatif.</p>
       </div>
 
-      <div class="card">
-        <h3>Brand Collaboration</h3>
-        <p>Kolaborasi dengan brand atau UMKM untuk menciptakan produk fashion eksklusif.</p>
+      <div class="kerjasama-card">
+        <div class="icon">🏢</div>
+        <h3>Corporate Partnership</h3>
+        <p>Kerja sama jangka panjang untuk kebutuhan merchandise dan apparel perusahaan.</p>
       </div>
+
     </div>
+
   </div>
+</section>
 </section>
 <!-- ================= Ulasan ================= -->
-<section id="Ulasan" class="section bg-light">
+<section id="ulasan" class="ulasan-section">
   <div class="container">
-    <h2 class="section-title">Ulasan</h2>
-    <section class="Ulasan">
-     <h2>Ulasan Pelanggan</h2>
 
-  <div class="Ulasan-container">
+    <h2 class="section-title">Ulasan Pelanggan</h2>
+    <p class="section-subtitle">
+      Apa kata pelanggan tentang kualitas produk R&D Collection
+    </p>
 
-    <div class="card">
-      <div class="card-header">
-        <img src="img/WhatsApp Image 2026-01-26 at 17.17.10.jpeg" class="profile">
-        <div>
-          <h4>Abu Bakar</h4>
-          <div class="rating">★★★★★</div>
-        </div>
-      </div>
-      <p>Produk sangat nyaman dipakai dan kualitasnya premium.</p>
-    </div>
-    <div class="card">
+    <div class="ulasan-container">
+
+      <!-- Card 1 -->
+      <div class="ulasan-card">
         <div class="card-header">
-            <img src="img/WhatsApp Image 2026-01-26 at 17.17.10.jpeg" class="profile">
-            <div>
-            <h4>Abu Bakar</h4>
+          <img src="img/WhatsApp Image 2026-02-28 at 07.53.42.jpeg" class="profile">
+          <div>
+            <h4>Zahra F</h4>
             <div class="rating">★★★★★</div>
-            </div>
+          </div>
         </div>
-        <p>Produk sangat nyaman dipakai dan kualitasnya premium.</p>
-        </div>
-
-    <div class="card">
-      <div class="card-header">
-        <img src="img/WhatsApp Image 2026-01-26 at 17.17.10.jpeg" class="profile">
-        <div>
-          <h4>Abdul Muthalib</h4>
-          <div class="rating">★★★★☆</div>
-        </div>
+        <p>Desain nya keren modern,classic,dan juga stylish </p>
       </div>
-      <p>Pengiriman cepat dan desainnya modern banget.</p>
+
+      <!-- Card 2 -->
+      <div class="ulasan-card">
+        <div class="card-header">
+          <img src="img/WhatsApp Image 2026-02-28 at 07.53.44.jpeg" class="profile">
+          <div>
+            <h4>Abdul Munadi</h4>
+            <div class="rating">★★★★☆</div>
+          </div>
+        </div>
+        <p>Harga terjangkau kualitasnya tidak main main dengan harga pasaran murah tetap berkualitas tidak kalah dengan produk luar #lokalabadi</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="ulasan-card">
+        <div class="card-header">
+          <img src="img/WhatsApp Image 2026-02-28 at 07.53.43.jpeg  " class="profile">
+          <div>
+            <h4>M.Ardi setiawan</h4>
+            <div class="rating">★★★★★</div>
+          </div>
+        </div>
+        <p>Kemeja klasik adalah wardrobe essential. Bisa dipakai formal, casual, atau layering di atas kaos. Warna netral dan pastel sangat trendi 2026</p>
+      </div>
+      <!-- Card 3 -->
+      <div class="ulasan-card">
+        <div class="card-header">
+          <img src="img/WhatsApp Image 2026-02-28 at 07.53.44 (1).jpeg" class="profile">
+          <div>
+            <h4>Mila Wanda Sari</h4>
+            <div class="rating">★★★★★</div>
+          </div>
+        </div>
+        <p>Batik kini modern dan bisa dipakai casual maupun formal. Cocok untuk kantor atau acara semi-formal. Paduan celana jeans atau rok bisa buat tampilan lebih santai.</p>
+      </div>
+      <!-- Card 3 -->
+      <div class="ulasan-card">
+        <div class="card-header">
+          <img src="img/WhatsApp Image 2026-02-28 at 08.24.32.jpeg" class="profile">
+          <div>
+            <h4>nuraini</h4>
+            <div class="rating">★★★★★</div>
+          </div>
+        </div>
+        <p>Batik kini modern dan bisa dipakai casual maupun formal. Cocok untuk kantor atau acara semi-formal. Paduan celana jeans atau rok bisa buat tampilan lebih santai.</p>
+      </div>
+      <!-- Card 3 -->
+      <div class="ulasan-card">
+        <div class="card-header">
+          <img src="img/WhatsApp Image 2026-02-28 at 07.53.43 (1).jpeg" class="profile">
+          <div>
+            <h4>iksanul A</h4>
+            <div class="rating">★★★★★</div>
+          </div>
+        </div>
+        <p>Kaos adalah dasar outfit yang mudah dipadu-padankan. Kaos polos untuk look minimalis, kaos dengan logo atau motif unik buat gaya lebih kasual dan modern.</p>
+      </div>
     </div>
+    <div class="ulasan-container"></div>
+    
+    
+    
+<section id="kontak" class="kontak-section">
+  <div class="container">
 
-     <div class="card">
-      <div class="card-header">
-        <img src="img/WhatsApp Image 2026-01-26 at 17.17.10.jpeg" class="profile">
+    <!-- Judul di tengah -->
+    <h2 class="section-title">Contact Person</h2>
+
+    <!-- Grid kontak -->
+    <div class="kontak-grid">
+      <a href="https://maps.google.com/?q=Jakarta" class="info-item" target="_blank">
+        <span>📍</span>
         <div>
-          <h4>Abdul Muthalib</h4>
-          <div class="rating">★★★★☆</div>
+          <h4>Alamat</h4>
+          <p>Lihat di Google Maps</p>
         </div>
-      </div>
-      <p>Pengiriman cepat dan desainnya modern banget.</p>
+      </a>
+
+      <a href="tel:081317376167" class="info-item">
+        <span>📞</span>
+        <div>
+          <h4>Telepon</h4>
+          <p>Hubungi Sekarang</p>
+        </div>
+      </a>
+
+      <a href="https://www.instagram.com/readyforbussines" class="info-item" target="_blank">
+        <span>📲</span>
+        <div>
+          <h4>Instagram</h4>
+          <p>@readyforbussines</p>
+        </div>
+      </a>
+
+      <a href="https://wa.me/6281317376167" class="info-item" target="_blank">
+        <span>💬</span>
+        <div>
+          <h4>WhatsApp</h4>
+          <p>Chat Langsung</p>
+        </div>
+      </a>
     </div>
 
   </div>
 </section>
 
-
-<!-- ================= KONTAK ================= -->
-<section id="kontak" class="section kontak-section">
-  <div class="container">
-    <h2 class="section-title">Hubungi Kami</h2>
-
-    <div class="kontak-info">
-      <p><strong>📍 Alamat:</strong> Jakarta, Indonesia</p>
-      <p><strong>📞 Telepon:</strong> 
-        <a href="tel:08123456789">0812-3456-789</a>
-      </p>
-      <p><strong>📧 Email:</strong> 
-        <a href="mailto:info@rdcollection.com">info@rdcollection.com</a>
-      </p>
-      <p><strong>📲 Instagram:</strong> 
-        <a href="https://instagram.com/rdcollection" target="_blank">@rdcollection</a>
-      </p>
-    </div>
-  </div>
+    <!-- ================= FOOTER SIMPLE ================= -->
 </section>
-<!-- ================= FOOTER ================= -->
-<footer class="footer">
-  <div class="container">
-    <p>© 2026 R&D Collection. All Rights Reserved.</p>
-  </div>
+
+</section>
+
+<footer class="footer-simple">
+  <p>© 2026 R&D Collection</p>
 </footer>
